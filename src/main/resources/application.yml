@@ -1,0 +1,26 @@
+server:
+  port: 8011
+spring:
+  application:
+    name: mutl-datasouree
+#  datasource:
+#    url: jdbc:mysql://localhost:13306/mutl-datasource?characterEncoding=UTF-8&useSSL=false
+#    username: root
+#    password: root
+dynamicDataSource:
+  default:
+    url: jdbc:mysql://localhost:13306/mutl-datasource?characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+mybatis:
+  configuration:
+    mapUnderscoreToCamelCase: true
+#  jpa:
+#    hibernate:
+#      ddl-auto: create  # 第一次建表create  后面用update
+#    show-sql: true
+#  datasource:
+#    url: jdbc:mysql://localhost:13306/mutl-datasource?characterEncoding=UTF-8&useSSL=false
+#    username: root
+#    password: root
